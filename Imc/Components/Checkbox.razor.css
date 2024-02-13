@@ -1,0 +1,18 @@
+.checkbox {
+    margin-bottom: 16px;
+    /* margin: 11px 0 27px 0; */
+    display: flex;
+    align-items: flex-start; /* Isso alinha os itens verticalmente ao início */
+}
+
+.input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    /* align-self: flex-start;  Remova essa linha para permitir que o checkbox alinhe à esquerda */
+}
+
+.input[type="checkbox"] + label {
+    color: #666666;
+    font-size: 14px;
+    margin-left: 8px; /* Adicione um espaço à esquerda entre o checkbox e o rótulo */
+}

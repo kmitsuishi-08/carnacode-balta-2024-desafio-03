@@ -1,0 +1,26 @@
+<div style="display: flex; justify-content: center;">
+    <input  @oninput="OnValueChanged" class="input @((Type == "search") ? "border-radius" : "")" type="text" placeholder="@PlaceHolder" >
+</div>
+
+@code {
+    private string? value;
+
+    [EditorRequired]
+    [Parameter]
+    public string PlaceHolder {get; set;} = string.Empty;
+
+    [Parameter]
+    public string Value { get; set; }
+    
+    [Parameter]
+    public EventCallback<string> ValueChanged { get; set; }
+
+    private async Task OnValueChanged(ChangeEventArgs e)
+    {
+        value = e?.Value?.ToString();
+        await ValueChanged.InvokeAsync(value);
+    }
+
+    [Parameter]
+    public string Type {get; set;} = string.Empty;
+}

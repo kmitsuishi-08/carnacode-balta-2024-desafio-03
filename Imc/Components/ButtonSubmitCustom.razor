@@ -1,0 +1,12 @@
+<div style="display: flex; justify-content: center;">
+    <input class="input border-radius @((Type == "submit") ? "submit" : "primary")" type="submit" value="@Value"/>
+</div>
+
+@code {
+    [EditorRequired]
+    [Parameter]
+    public string Value { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Type { get; set; } = string.Empty;
+}

@@ -1,0 +1,58 @@
+﻿@page "/history"
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@using Imc.Components
+
+<form>
+    <div class="container">
+        <CustomImage/>
+        <Imc.Components.Title Text="Histórico"/>
+        <Imc.Components.InputText PlaceHolder="Pesquisar..." Type="search"/>
+        <div>
+            <ul>
+                @if (itens != null) {
+
+                    @foreach (var item in itens.OrderByDescending(i=>i.Date))
+                    {
+                        @if(item.Normal)
+                        {
+                            <CustomItemList Title="Peso Ideal ✅" Time="@item.GetFormatedTime(item.Date)" Description="Parabéns, você está no seu peso ideal, continue mantendo este estilo!"/>
+                        }
+                        else
+                        {
+                            <CustomItemList Title="Sobrepeso ⛔️" Time="@item.GetFormatedTime(item.Date)" Description="Estamos quase lá! Faça alguns ajustes para ficar no peso ideal!"/>
+                        }
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</form>
+
+@code {
+    private List<Result>? itens;
+    protected override async Task OnInitializedAsync()
+    {
+        itens = await localStorage.GetItemAsync<List<Result>>("list-imc");
+    }
+
+    public class Result
+    {
+        public bool Normal { get; set; }
+        public DateTime Date { get; set; }
+
+        public string GetFormatedTime(DateTime date) 
+        {
+            TimeSpan difference =  DateTime.Now - date;
+            
+            if(date.Date != DateTime.Now.Date)
+                return date.ToString("dd/MM/yyyy");
+
+            double minTime = Math.Min(Math.Abs(difference.TotalHours), Math.Abs(difference.TotalMinutes));
+
+            if ((int)difference.TotalHours > (int)difference.TotalMinutes)
+                return $"{(int)difference.TotalHours}h atrás";
+            else
+                return $"{(int)difference.TotalMinutes}min atrás";
+        }
+    }
+}

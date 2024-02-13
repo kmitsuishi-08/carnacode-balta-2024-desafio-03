@@ -1,0 +1,14 @@
+<div class="checkbox">
+    <input class="input" type="checkbox" name="@Name"/>
+    <label for="@Name">@Value</label>
+</div>
+
+@code {
+    [EditorRequired]
+    [Parameter]
+    public string Name {get; set;} = string.Empty;
+
+    [EditorRequired]
+    [Parameter]
+    public string Value {get; set;} = string.Empty;
+}

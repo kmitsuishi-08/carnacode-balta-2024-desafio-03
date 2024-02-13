@@ -1,0 +1,55 @@
+﻿@page "/"
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@using Imc.Components
+
+<form onsubmit="@EnviarFormulario">
+    <div class="container">
+        <Imc.Components.Title Text="Cálculo de IMC"/>
+
+        <Imc.Components.InputText @bind-Value="Height" PlaceHolder="Altura"/>
+        <Imc.Components.InputText @bind-Value="Weight" PlaceHolder="Peso"/>
+        <Imc.Components.InputText @bind-Value="Gender" PlaceHolder="Sexo"/>
+        
+        <Checkbox Name="isSeniorCitizen" Value="Eu tenho 65 anos ou mais!"/>
+        <ButtonSubmitCustom Value="Calcular meu IMC" Type="submit"/>
+        <ButtonSubmitCustom Value="Entenda seu cálculo" Type="primary"/>
+    </div>
+</form>
+
+@code {
+    public string Height { get; set; } = string.Empty;
+    public string Weight { get; set; } = string.Empty;
+    public string Gender { get; set; } = string.Empty;
+
+    public async Task EnviarFormulario()
+    {
+        double.TryParse(Weight, out var weight);
+        double.TryParse(Height, out var height);
+        double imc = weight / (height * height);
+        var date = DateTime.Now;
+        
+        var normal = false;
+        if(imc <=  24.9)
+            normal = true;
+
+        var savedList = await localStorage.GetItemAsync<List<Result>>("list-imc");
+        var result = new Result(normal, date);
+        
+        if(savedList == null || !savedList.Any())
+            savedList = new List<Result>();
+        
+        savedList.Add(result);
+        await localStorage.SetItemAsync("list-imc", savedList);
+    }
+
+    public class Result
+    {
+        public bool Normal { get; set; }
+        public DateTime Date { get; set; }
+
+        public Result(bool normal, DateTime date){
+            Normal = normal;
+            Date = date;
+        }
+    }
+}
