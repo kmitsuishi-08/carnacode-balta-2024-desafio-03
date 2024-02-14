@@ -31,14 +31,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup DotNet Environment
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 8.0.x
-      - name: Build Blazor WebAssembly
-        run: |
-          cd ./Imc
-          dotnet build -c Release -o dist
+      # - name: Setup DotNet Environment
+        # uses: actions/setup-dotnet@v3
+        # with:
+          # dotnet-version: 8.0.x
+      # - name: Build Blazor WebAssembly
+        # run: |
+          # cd ./Imc
+          # dotnet build -c Release -o dist
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
