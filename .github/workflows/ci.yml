@@ -31,6 +31,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0'  # Especifique a versão desejada do .NET Core
+      - name: Build Blazor WebAssembly
+        run: |
+          cd path/do/seu/projeto
+          dotnet build -c Release -o ./Imc/dist
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
