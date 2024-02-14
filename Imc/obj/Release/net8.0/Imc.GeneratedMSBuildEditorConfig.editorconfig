@@ -1,0 +1,75 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Imc
+build_property.RootNamespace = Imc
+build_property.ProjectDir = E:\Repository\NEW2\carnacode-balta-2024-desafio-03\Imc\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Repository\NEW2\carnacode-balta-2024-desafio-03\Imc
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Components/ButtonSubmitCustom.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCdXR0b25TdWJtaXRDdXN0b20ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-aw2ssqvlwr
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Components/Checkbox.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDaGVja2JveC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-564hiwrzns
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Components/CustomImage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDdXN0b21JbWFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-lldk1dke92
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Components/CustomItemList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDdXN0b21JdGVtTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-m0nddwm9sd
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Components/InputText.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJbnB1dFRleHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4vwlbjd91p
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Components/Title.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUaXRsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-3c8o323ge3
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-j6tei9dcxl
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Pages/History.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ugjpdjbwcw
+
+[E:/Repository/NEW2/carnacode-balta-2024-desafio-03/Imc/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-u21jl3a434

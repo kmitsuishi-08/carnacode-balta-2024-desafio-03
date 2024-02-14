@@ -1,0 +1,20 @@
+form[b-ugjpdjbwcw]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+ul[b-ugjpdjbwcw] {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container[b-ugjpdjbwcw] {
+    align-items: center;
+    max-width: 343px; /* Define uma largura máxima para a "caixa" */
+    width: 100%; /* Faz com que a "caixa" tenha 100% da largura disponível */
+}
+

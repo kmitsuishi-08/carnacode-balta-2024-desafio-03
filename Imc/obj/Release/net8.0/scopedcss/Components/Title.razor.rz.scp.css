@@ -1,0 +1,9 @@
+.title[b-3c8o323ge3] {
+    font-size: 30px; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600; /* Adiciona semi-bold */
+    margin-bottom: 21px;
+    text-align: center;
+}
