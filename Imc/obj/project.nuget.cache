@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2XqWoC6nCF/CxUzmUooEMbxg02Z8Ed97SApeHqnyRC3pLYtBiQdlpDBaMOtqFiI5t96xYKqs7L6v2Lb1pPO7qg==",
+  "dgSpecHash": "YzN4acYXqwJ7f8y/d4kT5vaFoNdPB9GQuXgNcJGmNRQRKRs6qor+FpiP9Gf41BU0foaJbHhecfisos/6iRegdg==",
   "success": true,
-  "projectFilePath": "E:\\Repository\\carnacode-balta-2024-desafio-03\\Imc\\Imc.csproj",
+  "projectFilePath": "E:\\Repository\\NEW2\\carnacode-balta-2024-desafio-03\\Imc\\Imc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kelly Naomi\\.nuget\\packages\\blazored.localstorage\\4.5.0\\blazored.localstorage.4.5.0.nupkg.sha512",
     "C:\\Users\\Kelly Naomi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.1\\microsoft.aspnetcore.authorization.8.0.1.nupkg.sha512",

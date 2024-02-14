@@ -477,7 +477,7 @@
       "url": "imgs\/windows11\/Wide310x150Logo.scale-400.png"
     },
     {
-      "hash": "sha256-Wp8PKQ\/ucITmfB1IzvMDi2dOWdsLJxpERGHPn6PFHHI=",
+      "hash": "sha256-4LRs4xKmZnh\/K2hD9E8ZNTwCvcjX4orCrbjase7Qmao=",
       "url": "index.html"
     },
     {
@@ -1301,17 +1301,17 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-QBtMm15BgM\/bLYf7oN7bD65FUp\/Merba7iJUdM5p3MQ=",
+      "hash": "sha256-Hkthvjpk4hxJMVKfzWD3ydiGGxKz5i8Xyr4h\/kJxLGw=",
       "url": "_framework\/Imc.wasm"
     },
     {
-      "hash": "sha256-jDeYWl\/GKeHZt7lfzVuRO9jpsUz6bV\/MeWOOdneJpdg=",
+      "hash": "sha256-tdA8bXbQihudox2oXx9gu1Cc26NpcJQF\/52NyXiMibY=",
       "url": "_framework\/Imc.pdb"
     },
     {
-      "hash": "sha256-rsPrrv8BISr5FR\/Z0rNKcwNsrK1vEVsYQYfqh5YO2FM=",
+      "hash": "sha256-Z4ntLe4mOjQVaibGWC42pP4v0vp6njjkWtOHvbyDQNA=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "N1aK\/Lyo"
+  "version": "\/rjIK46p"
 };
