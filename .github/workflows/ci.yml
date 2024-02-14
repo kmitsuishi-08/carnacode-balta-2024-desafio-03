@@ -31,10 +31,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
+      - name: Setup DotNet Environment
+        uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0'  # Especifique a versão desejada do .NET Core
+          dotnet-version: 8.0.x
       - name: Build Blazor WebAssembly
         run: |
           cd ./Imc
